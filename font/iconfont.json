@@ -1,0 +1,58 @@
+{
+  "id": "3997146",
+  "name": "比赛",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "8692390",
+      "name": "画板",
+      "font_class": "huaban",
+      "unicode": "e63f",
+      "unicode_decimal": 58943
+    },
+    {
+      "icon_id": "16364320",
+      "name": "话筒，语音",
+      "font_class": "huatongyuyin",
+      "unicode": "e632",
+      "unicode_decimal": 58930
+    },
+    {
+      "icon_id": "25873431",
+      "name": "电灯,电灯,发光,光,灯泡,想法",
+      "font_class": "bulb-copy-copy",
+      "unicode": "e600",
+      "unicode_decimal": 58880
+    },
+    {
+      "icon_id": "1048884",
+      "name": "向右",
+      "font_class": "icon_on_the_right",
+      "unicode": "e625",
+      "unicode_decimal": 58917
+    },
+    {
+      "icon_id": "1048885",
+      "name": "向上",
+      "font_class": "icon_on_the_top",
+      "unicode": "e626",
+      "unicode_decimal": 58918
+    },
+    {
+      "icon_id": "1048882",
+      "name": "向左",
+      "font_class": "icon_on_the_left",
+      "unicode": "e623",
+      "unicode_decimal": 58915
+    },
+    {
+      "icon_id": "1048883",
+      "name": "向下",
+      "font_class": "icon_on_the_down",
+      "unicode": "e624",
+      "unicode_decimal": 58916
+    }
+  ]
+}
