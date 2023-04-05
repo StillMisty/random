@@ -107,17 +107,19 @@ body > header a:hover {
 }
 body > main {
   width: 100%;
-  padding: 30px;
+  padding: 30px 0;
   background: linear-gradient(180deg, #0a032e, #39135e, 60.64%, #163268 87.04%);
 }
 body > main #exhibition {
-  width: 100%;
+  width: 100vw;
+  overflow: hidden;
 }
 body > main #exhibition #change {
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
+  margin: 0 20px;
 }
 body > main #exhibition #change #introduce {
   width: 80%;
@@ -184,6 +186,8 @@ body > main #word > section .iconfont {
   font-size: 32px;
 }
 body > main #word > section:nth-child(2n+1) {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -192,6 +196,8 @@ body > main #word > section:nth-child(2n+1) {
   padding-right: 20px;
 }
 body > main #word > section:nth-child(2n) {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
   margin-left: 5%;
   display: flex;
   justify-content: flex-start;
@@ -201,6 +207,7 @@ body > main #word > section:nth-child(2n) {
 }
 body > main #skill {
   width: 100%;
+  padding: 0 20px;
 }
 body > main #skill > h1 {
   width: 100%;

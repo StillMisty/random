@@ -124,16 +124,17 @@ body {
 
     &>main {
         width: 100%;
-        padding: 30px;
+        padding: 30px 0;
         background:linear-gradient(180deg,rgb(10,3,46),rgb(57,19,94),60.64%,rgb(22,50,104)87.04%);
         #exhibition {
-            width: 100%;
-
+            width: 100vw;
+            overflow: hidden;
             #change {
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
                 width: 100%;
+                margin: 0 20px;
                 #introduce {
                     width: 80%;
                     height: 100%;
@@ -211,6 +212,8 @@ body {
                     font-size: 32px;
                 }
                 &:nth-child(2n+1) {
+                    border-top-left-radius: 0;
+                    border-bottom-left-radius: 0;
                     display: flex;
                     justify-content: flex-end;
                     align-items: center;
@@ -219,6 +222,8 @@ body {
                     padding-right: 20px;
                 }
                 &:nth-child(2n) {
+                    border-top-right-radius: 0;
+                    border-bottom-right-radius: 0;
                     margin-left: 5%;
                     display: flex;
                     justify-content: flex-start;
@@ -231,7 +236,7 @@ body {
         
         #skill {
             width: 100%;
-
+            padding: 0 20px;
             &>h1 {
                 width: 100%;
                 font-size: 48px;
