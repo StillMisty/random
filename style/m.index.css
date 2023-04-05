@@ -40,7 +40,7 @@ body > nav #nav_logo img {
   height: 40px;
 }
 body > nav #nav_logo strong {
-  font-size: 24px;
+  font-size: 18px;
   height: 40px;
   line-height: 40px;
   color: #7dfffc;
@@ -53,7 +53,7 @@ body > nav > ul {
 body > nav > ul > li {
   height: 60px;
   line-height: 60px;
-  margin: 0 40px;
+  margin: 0 20px;
 }
 body > nav > ul > li a {
   font-size: 18px;
@@ -89,7 +89,7 @@ body > header {
   transition: all 0.2s;
 }
 body > header h1 {
-  font-size: 60px;
+  font-size: 48px;
   color: #ffffff;
   text-shadow: 4px 4px 8px #1c1c25, -4px -4px 8px #1c1c25;
 }
@@ -264,7 +264,7 @@ body > main #skill > section #textarea {
   padding: 16px;
   border-radius: 10px;
   background-color: rgba(255, 255, 255, 0.6);
-  font-size: 24px;
+  font-size: 20px;
 }
 body > footer {
   padding: 30px 0 80px;

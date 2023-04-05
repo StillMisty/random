@@ -62,24 +62,30 @@ window.onload = function(){
   //切换展示的图片
   const left = document.getElementById("left");
   const right = document.getElementById("right");
-  const move_distance = rotate_img[0].offsetWidth + parseInt(window.getComputedStyle(rotate_img[0]).marginRight, 10)*2;
+  const move_distance = 430;
   
-  let img_distance = -move_distance*(rotate_img.length-1);
+  let img_distance = -move_distance*(rotate_img.length);
   img_exhibition.style.transform = `translateX(${img_distance}px)`;
   left.addEventListener("click",()=>{
+    img_exhibition.style.transition = "all .2s";
     img_distance += move_distance;
-    if(img_distance > -move_distance){
-      img_distance = -move_distance*(rotate_img.length);
-    }
     img_exhibition.style.transform = `translateX(${img_distance}px)`;
+    if(img_distance >= 0){
+      img_exhibition.style.transition = "none";
+      img_distance = -move_distance*(rotate_img.length+1);
+      img_exhibition.style.transform = `translateX(${img_distance}px)`;
+    }
   })
 
   right.addEventListener("click",()=>{
+    img_exhibition.style.transition = "all .2s";
     img_distance -= move_distance;
-    if(img_distance < (rotate_img.length+2) *(-move_distance)){
-      img_distance = -move_distance*(rotate_img.length-2);
-    }
     img_exhibition.style.transform = `translateX(${img_distance}px)`;
+    if(img_distance <= -move_distance*(rotate_img.length+3)){
+      img_exhibition.style.transition = "none";
+      img_distance = -move_distance*2;
+      img_exhibition.style.transform = `translateX(${img_distance}px)`;
+    }
   })
 
 
