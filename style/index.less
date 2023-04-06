@@ -104,6 +104,7 @@ body {
             color: #ffffff;
             text-shadow: 4px 4px 8px #1c1c25,
                         -4px -4px 8px #1c1c25;
+            animation: onload 2s;
         }
 
         a {
@@ -113,6 +114,7 @@ body {
             color: black;
             background:#ffffff;
             border-radius: 20px;
+            animation: onload 2s;
             transition: all 0.2s;
 
             &:hover {
@@ -178,7 +180,7 @@ body {
                             font-size: 50px;
                             color: #ffffff;
                             transform-origin: center center;
-                            transform: scale(0.8);
+                            transform: scale(0.7);
                         }
                     }
                 }
@@ -346,7 +348,7 @@ body {
         }
 
         &>section {
-            height: 300px;
+            height: 240px;
             width: 100%;
             display: flex;
             align-items: center;
@@ -362,7 +364,7 @@ body {
                 border: 1px #ffffff solid;
                 border-left: 0;
                 img{
-                    height: 120px;
+                    height: 80px;
                 }
 
                 h2 {
@@ -419,7 +421,14 @@ body {
 }
 
 
-
+@keyframes onload {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
 
 
 

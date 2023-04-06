@@ -98,6 +98,7 @@ window.onload = function(){
   textarea.innerHTML = skill_text[0];
   len = skill.length;
   for (let i = 0; i<len; i++){
+    skill[i].innerHTML = String(i+1+'.')+skill[i].innerHTML;
       skill[i].addEventListener("click",function(){
         for(let ii of skill){
           ii.classList.remove("required");

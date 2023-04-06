@@ -104,6 +104,7 @@ body {
             color: #ffffff;
             text-shadow: 4px 4px 8px #1c1c25,
                         -4px -4px 8px #1c1c25;
+            animation: onload 3s;
         }
 
         a {
@@ -113,6 +114,7 @@ body {
             color: black;
             background:#ffffff;
             border-radius: 20px;
+            animation: onload 3s;
             transition: all 0.2s;
 
             &:hover {
@@ -158,10 +160,6 @@ body {
                 justify-content: left;
                 align-items: center;
                 animation: move 30s linear infinite;
-
-                &:hover {
-                    animation-play-state: paused;
-                }
 
                 &>div {
                     margin: 0 10px;
@@ -304,7 +302,7 @@ body {
     }
 
     &>footer {
-        padding: 30px 0 80px;
+        padding: 30px 0;
         width: 100%;
         background: linear-gradient(to bottom right,#24284a,#6d718e);
         display: flex;
@@ -319,7 +317,6 @@ body {
         }
 
         &>section {
-            height: 300px;
             width: 100%;
             display: flex;
             flex-direction: column;
@@ -328,18 +325,20 @@ body {
 
             #footer_logo {
                 width: 100%;
+                height: 120px;
                 display: flex;
                 flex-direction: column;
                 align-items: center;
                 justify-content: center;
                 border: 1px #ffffff solid;
+                
                 img{
-                    height: 60px;
+                    height: 40px;
                 }
 
                 h2 {
                     color: rgba(255, 255, 255, 0.8);
-                    font-size: 18px;
+                    font-size: 16px;
                 }
 
                 h2:nth-child(2) {
@@ -363,14 +362,14 @@ body {
 
                     h6 {
                         color: rgba(255, 255, 255, 0.8);
-                        font-size: 18px;
-                        margin-bottom: 6px;
+                        font-size: 16px;
+                        margin-bottom: 4px;
                     }
 
                     a {
                         color: rgba(255, 255, 255, 0.8);
                         font-size: 12px;
-                        margin: 6px 0;
+                        margin: 4px 0;
 
                         &:hover {
                             color: #ffffff;
@@ -391,7 +390,14 @@ body {
     }
 }
 
-
+@keyframes onload {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
 
 
 

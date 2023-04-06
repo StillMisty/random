@@ -92,6 +92,7 @@ body > header h1 {
   font-size: 60px;
   color: #ffffff;
   text-shadow: 4px 4px 8px #1c1c25, -4px -4px 8px #1c1c25;
+  animation: onload 2s;
 }
 body > header a {
   margin-top: 8px;
@@ -100,6 +101,7 @@ body > header a {
   color: black;
   background: #ffffff;
   border-radius: 20px;
+  animation: onload 2s;
   transition: all 0.2s;
 }
 body > header a:hover {
@@ -161,7 +163,7 @@ body > main #exhibition #change #picture_rotation > div > span {
   font-size: 50px;
   color: #ffffff;
   transform-origin: center center;
-  transform: scale(0.8);
+  transform: scale(0.7);
 }
 body > main #exhibition #img_exhibition {
   height: 400px;
@@ -306,7 +308,7 @@ body > footer > h1 {
   margin-bottom: 30px;
 }
 body > footer > section {
-  height: 300px;
+  height: 240px;
   width: 100%;
   display: flex;
   align-items: center;
@@ -323,7 +325,7 @@ body > footer > section #footer_logo {
   border-left: 0;
 }
 body > footer > section #footer_logo img {
-  height: 120px;
+  height: 80px;
 }
 body > footer > section #footer_logo h2 {
   color: rgba(255, 255, 255, 0.8);
@@ -364,6 +366,14 @@ body > footer > section #footer_introduce > section a {
 }
 body > footer > section #footer_introduce > section a:hover {
   color: #ffffff;
+}
+@keyframes onload {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 * {
   margin: 0;
