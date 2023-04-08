@@ -163,9 +163,6 @@ body > main #exhibition #img_exhibition > div > div {
   background-size: cover;
   transition: all 0.2s;
 }
-body > main #exhibition #img_exhibition > div:hover > div {
-  transform: scale(1.05);
-}
 body > main #exhibition #img_exhibition > div p {
   display: block;
   padding: 10px;
