@@ -83,7 +83,7 @@ body > header {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background: fixed no-repeat center center;
+  background: fixed no-repeat center center url(../img/0.jpg);
   background-size: cover;
   background-color: black;
   transition: all 0.2s;
